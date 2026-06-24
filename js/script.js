@@ -1,5 +1,5 @@
 // --- CONFIGURATION ---
-const apiKey = '98924691f57349f68248ac8d2fca0176';
+const apiKey = 'ddfda063c4704e17a13e5e599598dd57';
 const baseUrl = 'https://api.football-data.org/v4/competitions/';
 
 const championnats = {
