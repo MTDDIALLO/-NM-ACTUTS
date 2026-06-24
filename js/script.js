@@ -1,7 +1,6 @@
 // --- CONFIGURATION ---
 const apiKey = 'ddfda063c4704e17a13e5e599598dd57';
-const baseUrl = 'https://api.football-data.org/v4/competitions/';
-
+const baseUrl = 'https://corsproxy.io/?url=https://api.football-data.org/v4/competitions/';
 const championnats = {
     'FL1': 'Ligue 1 (France)',
     'PL':  'Premier League (Angleterre)',
