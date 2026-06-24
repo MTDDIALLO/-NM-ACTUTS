@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sondages - NM'Actus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sondages</h1>
+        <p>Donne ton avis et vois les resultats en direct</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="calendrier.html">Calendrier</a>
+        <a href="equipe.html">Equipes</a>
+        <a href="classement.html">Classement</a>
+        <a href="forum.html">Forum</a>
+        <a href="sondage.html">Sondages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+
+        <!-- Sondage 1 — data-cle identifie ce sondage dans localStorage -->
+        <section class="sondage-section" data-cle="champion">
+            <h2>Qui sera champion de Ligue 1 ?</h2>
+            <form>
+                <label><input type="radio" name="champion" value="Paris Saint-Germain"> Paris Saint-Germain</label>
+                <label><input type="radio" name="champion" value="Olympique de Marseille"> Olympique de Marseille</label>
+                <label><input type="radio" name="champion" value="RC Lens"> RC Lens</label>
+                <label><input type="radio" name="champion" value="AS Monaco"> AS Monaco</label>
+                <button type="submit">Voter</button>
+            </form>
+            <!-- Les barres de resultats s'affichent ici apres le vote -->
+            <div class="sondage-resultat"></div>
+        </section>
+
+        <!-- Sondage 2 -->
+        <section class="sondage-section" data-cle="buteur">
+            <h2>Qui sera le meilleur buteur ?</h2>
+            <form>
+                <label><input type="radio" name="buteur" value="Ousmane Dembele"> Ousmane Dembele</label>
+                <label><input type="radio" name="buteur" value="Mason Greenwood"> Mason Greenwood</label>
+                <label><input type="radio" name="buteur" value="Pierre-Emerick Aubameyang"> Pierre-Emerick Aubameyang</label>
+                <label><input type="radio" name="buteur" value="Kylian Mbappe"> Kylian Mbappe</label>
+                <button type="submit">Voter</button>
+            </form>
+            <div class="sondage-resultat"></div>
+        </section>
+
+    </main>
+    <footer>
+        <p>2025 NM'Actus</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

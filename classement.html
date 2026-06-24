@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Classement - NM'Actus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Classement</h1>
+        <p>Tableau de classement en temps reel</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="calendrier.html">Calendrier</a>
+        <a href="equipe.html">Equipes</a>
+        <a href="classement.html">Classement</a>
+        <a href="forum.html">Forum</a>
+        <a href="sondage.html">Sondages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Classement</h2>
+            <div id="ligue-selector"></div>
+            <h3 id="titre-ligue">Ligue 1 (France)</h3>
+            <table id="table-classement">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Equipe</th>
+                        <th>J</th>
+                        <th>G</th>
+                        <th>N</th>
+                        <th>P</th>
+                        <th>Diff</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody id="body-classement">
+                    <tr><td colspan="8" class="chargement">Chargement...</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>2025 NM'Actus</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

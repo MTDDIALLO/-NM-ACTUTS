@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - NM'Actus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NM'Actus</h1>
+        <p>Actus, matchs et classements en un seul endroit.</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="calendrier.html">Calendrier</a>
+        <a href="equipe.html">Equipes</a>
+        <a href="classement.html">Classement</a>
+        <a href="forum.html">Forum</a>
+        <a href="sondage.html">Sondages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+
+        <section>
+            <h2>Nous contacter</h2>
+            <p>Une question, une suggestion ou un signalement ? Remplis le formulaire ci-dessous.</p>
+
+            <!-- Informations de contact -->
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+                <div class="card" style="padding: 16px; flex: 1; min-width: 200px;">
+                    <h3 style="color: #0F6A2F; margin: 0 0 8px 0;">Email</h3>
+                    <p style="margin: 0;">contact@nmactus.fr</p>
+                </div>
+                <div class="card" style="padding: 16px; flex: 1; min-width: 200px;">
+                    <h3 style="color: #0F6A2F; margin: 0 0 8px 0;">Reponse</h3>
+                    <p style="margin: 0;">Sous 48 heures</p>
+                </div>
+                <div class="card" style="padding: 16px; flex: 1; min-width: 200px;">
+                    <h3 style="color: #0F6A2F; margin: 0 0 8px 0;">Site</h3>
+                    <p style="margin: 0;">NM'Actus - Fan de foot</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formulaire de contact</h2>
+
+            <!-- Message de confirmation (cache par defaut, affiche apres envoi) -->
+            <div id="message-confirmation" style="display: none; background-color: #E6F4EA; border: 1px solid #BBF7D0; border-radius: 8px; padding: 16px; margin-bottom: 16px; color: #0F6A2F;">
+                <strong>Message envoye !</strong> Merci de nous avoir contactes. Nous reviendrons vers toi sous 48 heures.
+            </div>
+
+            <form id="contact-form">
+
+                <label for="nom">Nom complet *</label>
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Ton nom..."
+                    required
+                >
+
+                <label for="email">Adresse email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ton@email.fr"
+                    required
+                >
+
+                <label for="sujet">Sujet *</label>
+                <input
+                    type="text"
+                    id="sujet"
+                    name="sujet"
+                    placeholder="Objet de ton message..."
+                    required
+                >
+
+                <label for="message">Message *</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Ecris ton message ici..."
+                    required
+                ></textarea>
+
+                <p style="font-size: 0.85em; color: #6B7280; margin-top: 8px;">* Champs obligatoires</p>
+
+                <button type="submit">Envoyer le message</button>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>2025 NM'Actus</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

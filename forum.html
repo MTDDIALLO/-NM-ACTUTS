@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum - NM'Actus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Forum</h1>
+        <p>Echange avec les autres fans</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="calendrier.html">Calendrier</a>
+        <a href="equipe.html">Equipes</a>
+        <a href="classement.html">Classement</a>
+        <a href="forum.html">Forum</a>
+        <a href="sondage.html">Sondages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Nouveau message</h2>
+            <form id="forum-form">
+                <label>Pseudo :</label>
+                <input type="text" name="pseudo" placeholder="Ton pseudo..." required>
+                <label>Message :</label>
+                <textarea name="message" rows="4" placeholder="Ton message..." required></textarea>
+                <button type="submit">Publier</button>
+            </form>
+        </section>
+        <section>
+            <h2>Messages recents</h2>
+            <!-- Compteur de messages -->
+            <span id="forum-compteur" class="forum-compteur">0 message</span>
+            <ul id="liste-messages" style="padding:0; margin-top:12px;"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>2025 NM'Actus</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
